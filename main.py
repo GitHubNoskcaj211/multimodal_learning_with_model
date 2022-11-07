@@ -2,7 +2,7 @@ import argparse
 from ast import parse
 from training import train_encoder_decoder_embeddings, train_encoder_decoder_multidata_embeddings
 from video_preprocessing import computeOpticalFlow, create_data_blobs
-from embeddings_cluster_explore import evaluate_model, evaluate_model_multidata, plot_umap_clusters, plot_umap_clusters_multidata
+from embeddings_cluster_explore import evaluate_model, evaluate_model_multidata, plot_umap_clusters, plot_umap_clusters_multidata, evaluate_model_superuser
 from neural_networks import encoderDecoder
 import torch
 
@@ -159,7 +159,11 @@ def main() -> None:
             
         model = encoderDecoder(embedding_dim = model_dim)
         model.load_state_dict(torch.load(weights_save_path))
-        evaluate_model(blobs_folder_path = blobs_folder_path, model = model, num_clusters = 10, save_embeddings = False)
+        transcriptions_path = '../jigsaw_dataset/Suturing/transcriptions/'
+        experimental_setup_path = '../jigsaw_dataset/Experimental_setup/Suturing/Balanced/GestureClassification/UserOut/'
+        for i in range(8):
+            setup_path = experimental_setup_path+str(i+1)+"_Out/"
+            evaluate_model_superuser(blobs_folder_path=blobs_folder_path,model=model,transcriptions_path=transcriptions_path,experimental_setup_path=setup_path)
 
     else:
         print('Mode is not recognized. Options are optical_flow, data_blobs, train, multidata_train, or eval')
