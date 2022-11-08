@@ -42,6 +42,8 @@ conda create --name torch python=3.6
 conda activate torch
 conda install pytorch cuda92 -c pytorch
 pip install sklearn opencv-python tqdm pandas xgboost umap seaborn multipledispatch barbar
+pip install -U scikit-learn scipy matplotlib
+
 
 # Get Dataset
 sudo apt-get install zip unzip
