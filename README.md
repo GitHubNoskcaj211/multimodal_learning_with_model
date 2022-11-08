@@ -66,6 +66,10 @@ Make sure the code started running OK (it should say 'Rescaling videos; Processi
 
 <code>python3 main.py --mode 'train' --blobs_folder_path '../JIGSAWS/Suturing/blobs' --weights_save_path models</code> 
 
+### To evaluate the network (remember to put your network into the models folder
+<code>python3 main.py --mode 'eval' --blobs_folder_path '../JIGSAWS/Suturing/blobs' --weights_save_path models</code> 
+
+
 The paper associated with this repository can be found at https://link.springer.com/article/10.1007/s11548-021-02343-y. The citation details are as follows.
 
 @article{wu2021cross,
