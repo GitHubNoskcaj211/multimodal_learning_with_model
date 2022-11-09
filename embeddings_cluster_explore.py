@@ -309,6 +309,7 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
     iterations = list(filter(lambda x: '.DS_Store' not in x, iterations))
     
     metrics = {'accuracy': [], 'precision': [], 'recall': [], 'f1-score': [], 'support': []}
+    metrics_train = {'accuracy': [], 'precision': [], 'recall': [], 'f1-score': [], 'support': []}
     itr = 0
     for iter_num in tqdm(iterations):
         directory_path = os.path.join(experimental_setup_path, iter_num)
@@ -332,9 +333,6 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
                 except:
                     pass
             f.close()
-        print("Experimental path: ",experimental_setup_path)
-        print("Iter num: ",iter_num)
-        print("Directory path: ",directory_path)
         X_train = X[train_indices]
         y_train = y[train_indices]
         X_test = X[test_indices]
@@ -348,12 +346,6 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
         report_train = classification_report(y_train,y_hat,output_dict = True)
         report_test = classification_report(y_test, y_hat_test, output_dict = True)
 
-        with open(os.path.join(directory_path,'train_report.txt'),'w') as f:
-            f.write(json.dumps(report_train))
-            f.close()
-        with open(os.path.join(directory_path,'test_report.txt'),'w') as g:
-            g.write(json.dumps(report_test))
-            g.close()
         # metrics['accuracy'] = (metrics['accuracy']*itr + report_test['accuracy'])/(itr + 1)
         # metrics['precision'] = (metrics['precision']*itr + report_test['weighted avg']['precision'])/(itr + 1)
         # metrics['recall'] = (metrics['recall']*itr + report_test['weighted avg']['recall'])/(itr + 1)
@@ -367,8 +359,24 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
         metrics['f1-score'].append(report_test['weighted avg']['f1-score'])
         metrics['support'].append(report_test['weighted avg']['support'])
         
-    for key, val in metrics.items():
-        print('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+        metrics_train['accuracy'].append(report_train['accuracy'])
+        metrics_train['precision'].append(report_train['weighted avg']['precision'])
+        metrics_train['recall'].append(report_train['weighted avg']['recall'])
+        metrics_train['f1-score'].append(report_train['weighted avg']['f1-score'])
+        metrics_train['support'].append(report_train['weighted avg']['support'])
+    
+    print("NUM: ",experimental_setup_path[-6]
+    with open("Test"+experimental_setup_path[-6]+".txt",'w') as f:
+        for key, val in metrics.items():
+            f.write('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+            print('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+        f.close()
+          
+    with open("Train"+experimental_setup_path[-6]+".txt",'w') as f:
+        for key, val in metrics_train.items():
+            f.write('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+            print('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+        f.close()
 
 def main():
     blobs_folder_path = '../jigsaw_dataset/Suturing/blobs'
