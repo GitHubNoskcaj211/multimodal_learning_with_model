@@ -24,7 +24,6 @@ import re
 def store_embeddings_in_dict(blobs_folder_path: str, model: encoderDecoder) -> dict:
     blobs_folder = os.listdir(blobs_folder_path)
     blobs_folder = list(filter(lambda x: '.DS_Store' not in x, blobs_folder))
-    print("Blobs folder: ",blobs_folder)
     blobs_folder.sort(key = lambda x: int(x.split('_')[1]))
 
     embeddings_list = []
@@ -339,12 +338,17 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
         X_test = X[test_indices]
         y_test = y[test_indices]
 
-        classifier = XGBClassifier(n_estimators = 1000)
+        classifier = XGBClassifier(n_estimators = 1000,label_encoder=False)
         classifier.fit(X_train, y_train)
 
-        # y_hat = classifier.predict(X_train)
+        y_hat = classifier.predict(X_train)
         y_hat_test = classifier.predict(X_test)
+        report_train = classification_report(y_train,y_hat,output_dict = True)
         report_test = classification_report(y_test, y_hat_test, output_dict = True)
+        with open(experimental_setup_path+'train_report.txt','w') as f:
+            f.write(report_train)
+        with open(experimental_setup_path+'test_report.txt','w') as g:
+            g.write(report_test)
         # metrics['accuracy'] = (metrics['accuracy']*itr + report_test['accuracy'])/(itr + 1)
         # metrics['precision'] = (metrics['precision']*itr + report_test['weighted avg']['precision'])/(itr + 1)
         # metrics['recall'] = (metrics['recall']*itr + report_test['weighted avg']['recall'])/(itr + 1)
