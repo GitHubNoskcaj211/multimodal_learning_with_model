@@ -346,9 +346,10 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
         y_hat_test = classifier.predict(X_test)
         report_train = classification_report(y_train,y_hat,output_dict = True)
         report_test = classification_report(y_test, y_hat_test, output_dict = True)
-        with open(experimental_setup_path+'train_report.txt','w') as f:
+
+        with open(os.path.join(directory_path,'train_report.txt'),'w') as f:
             f.write(json.dumps(report_train))
-        with open(experimental_setup_path+'test_report.txt','w') as g:
+        with open(os.path.join(directory_path,'test_report.txt'),'w') as g:
             g.write(json.dumps(report_test))
         # metrics['accuracy'] = (metrics['accuracy']*itr + report_test['accuracy'])/(itr + 1)
         # metrics['precision'] = (metrics['precision']*itr + report_test['weighted avg']['precision'])/(itr + 1)
