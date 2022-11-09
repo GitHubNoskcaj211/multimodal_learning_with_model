@@ -312,10 +312,6 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
     itr = 0
     for iter_num in tqdm(iterations):
         directory_path = os.path.join(experimental_setup_path, iter_num)
-        print(experimental_setup_path)
-        print(iter_num)
-        print(directory_path)
-        exit()
         train_indices = []
         test_indices = []
         
@@ -336,7 +332,9 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
                 except:
                     pass
             f.close()
-
+        print("Experimental path: ",experimental_setup_path)
+        print("Iter num: ",iter_num)
+        print("Directory path: ",directory_path)
         X_train = X[train_indices]
         y_train = y[train_indices]
         X_test = X[test_indices]
@@ -352,8 +350,10 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
 
         with open(os.path.join(directory_path,'train_report.txt'),'w') as f:
             f.write(json.dumps(report_train))
+            f.close()
         with open(os.path.join(directory_path,'test_report.txt'),'w') as g:
             g.write(json.dumps(report_test))
+            g.close()
         # metrics['accuracy'] = (metrics['accuracy']*itr + report_test['accuracy'])/(itr + 1)
         # metrics['precision'] = (metrics['precision']*itr + report_test['weighted avg']['precision'])/(itr + 1)
         # metrics['recall'] = (metrics['recall']*itr + report_test['weighted avg']['recall'])/(itr + 1)
