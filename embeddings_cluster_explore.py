@@ -365,7 +365,7 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
         metrics_train['f1-score'].append(report_train['weighted avg']['f1-score'])
         metrics_train['support'].append(report_train['weighted avg']['support'])
     
-    print("NUM: ",experimental_setup_path[-6]
+    print("NUM: ",experimental_setup_path[-6])
     with open("Test"+experimental_setup_path[-6]+".txt",'w') as f:
         for key, val in metrics.items():
             f.write('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
