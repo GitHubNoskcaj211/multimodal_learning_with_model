@@ -312,7 +312,10 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
     itr = 0
     for iter_num in tqdm(iterations):
         directory_path = os.path.join(experimental_setup_path, iter_num)
-        
+        print(experimental_setup_path)
+        print(iter_num)
+        print(directory_path)
+        exit()
         train_indices = []
         test_indices = []
         
