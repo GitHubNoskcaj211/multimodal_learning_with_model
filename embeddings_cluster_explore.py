@@ -63,7 +63,7 @@ def store_embeddings_in_dict(blobs_folder_path: str, model: encoderDecoder) -> d
 def cluster_statistics(blobs_folder_path: str, model: encoderDecoder, num_clusters: int) -> pd.DataFrame:
     results_dict = store_embeddings_in_dict(blobs_folder_path = blobs_folder_path, model = model)
     k_means = KMeans(n_clusters = num_clusters)
-    cluster_indices = k_means.fit_predict(np.array(results_dict['embeddings']).reshape(-1, 2048))
+    cluster_indices = k_means.fit_predict(np.array(results_dict['embeddings']).reshape(-1, 512))
     results_dict['cluster_indices'] = cluster_indices
     df = pd.DataFrame(results_dict)
     return(df)
@@ -77,7 +77,7 @@ def cluster_statistics_multidata(blobs_folder_paths_list: List[str], model: enco
         for key, value in temp_results_dict.items():
             results_dict[key].extend(value)
     k_means = KMeans(n_clusters = num_clusters)
-    cluster_indices = k_means.fit_predict(np.array(results_dict['embeddings']).reshape(-1, 2048))
+    cluster_indices = k_means.fit_predict(np.array(results_dict['embeddings']).reshape(-1, 512))
     results_dict['cluster_indices'] = cluster_indices
     df = pd.DataFrame(results_dict)
     return(df)
@@ -89,7 +89,7 @@ def evaluate_model(blobs_folder_path: str, model: encoderDecoder, num_clusters: 
         df.to_pickle('./df.p')
     y = df['gesture'].values.ravel()
     X = [np.array(v) for v in df['embeddings']]
-    X = np.array(X).reshape(-1, 2048)
+    X = np.array(X).reshape(-1, 512)
     classifier = XGBClassifier(n_estimators = 1000)
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 8765)
     
