@@ -24,6 +24,7 @@ import re
 def store_embeddings_in_dict(blobs_folder_path: str, model: encoderDecoder) -> dict:
     blobs_folder = os.listdir(blobs_folder_path)
     blobs_folder = list(filter(lambda x: '.DS_Store' not in x, blobs_folder))
+    print("Blobs folder: ",blobs_folder)
     blobs_folder.sort(key = lambda x: int(x.split('_')[1]))
 
     embeddings_list = []
