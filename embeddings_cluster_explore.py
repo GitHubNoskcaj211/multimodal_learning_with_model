@@ -20,6 +20,7 @@ from tqdm import tqdm
 from barbar import Bar
 from joblib import dump, load
 import re
+import json
 
 def store_embeddings_in_dict(blobs_folder_path: str, model: encoderDecoder) -> dict:
     blobs_folder = os.listdir(blobs_folder_path)
@@ -338,7 +339,7 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
         X_test = X[test_indices]
         y_test = y[test_indices]
 
-        classifier = XGBClassifier(n_estimators = 1000,label_encoder=False)
+        classifier = XGBClassifier(n_estimators = 1000,use_label_encoder=False)
         classifier.fit(X_train, y_train)
 
         y_hat = classifier.predict(X_train)
@@ -346,9 +347,9 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
         report_train = classification_report(y_train,y_hat,output_dict = True)
         report_test = classification_report(y_test, y_hat_test, output_dict = True)
         with open(experimental_setup_path+'train_report.txt','w') as f:
-            f.write(report_train)
+            f.write(json.dumps(report_train))
         with open(experimental_setup_path+'test_report.txt','w') as g:
-            g.write(report_test)
+            g.write(json.dumps(report_test))
         # metrics['accuracy'] = (metrics['accuracy']*itr + report_test['accuracy'])/(itr + 1)
         # metrics['precision'] = (metrics['precision']*itr + report_test['weighted avg']['precision'])/(itr + 1)
         # metrics['recall'] = (metrics['recall']*itr + report_test['weighted avg']['recall'])/(itr + 1)
