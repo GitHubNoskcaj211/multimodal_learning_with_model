@@ -110,7 +110,7 @@ def evaluate_model_multidata(blobs_folder_paths_list: str, model: encoderDecoder
         df.to_pickle('./df.p')
     y = df['task'].values.ravel()
     X = [np.array(v) for v in df['embeddings']]
-    X = np.array(X).reshape(-1, 2048)
+    X = np.array(X).reshape(-1, 512)
     classifier = XGBClassifier(n_estimators = 1000)
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 5113)
     
@@ -302,7 +302,7 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
     
     y = df['skill'].values.ravel()
     X = [np.array(v) for v in df['embeddings']]
-    X = np.array(X).reshape(-1, 2048)
+    X = np.array(X).reshape(-1, 512)
 
     sampler_list = []
     iterations = os.listdir(experimental_setup_path)
