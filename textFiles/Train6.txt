@@ -1,0 +1,1 @@
+Mean accuracy : 1.0 	 	 Std accuracy : 0.0Mean precision : 1.0 	 	 Std precision : 0.0Mean recall : 1.0 	 	 Std recall : 0.0Mean f1-score : 1.0 	 	 Std f1-score : 0.0Mean support : 291.0 	 	 Std support : 0.0
