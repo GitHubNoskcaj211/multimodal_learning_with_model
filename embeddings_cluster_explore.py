@@ -20,6 +20,7 @@ from tqdm import tqdm
 from barbar import Bar
 from joblib import dump, load
 import re
+import json
 
 def store_embeddings_in_dict(blobs_folder_path: str, model: encoderDecoder) -> dict:
     blobs_folder = os.listdir(blobs_folder_path)
@@ -62,7 +63,7 @@ def store_embeddings_in_dict(blobs_folder_path: str, model: encoderDecoder) -> d
 def cluster_statistics(blobs_folder_path: str, model: encoderDecoder, num_clusters: int) -> pd.DataFrame:
     results_dict = store_embeddings_in_dict(blobs_folder_path = blobs_folder_path, model = model)
     k_means = KMeans(n_clusters = num_clusters)
-    cluster_indices = k_means.fit_predict(np.array(results_dict['embeddings']).reshape(-1, 2048))
+    cluster_indices = k_means.fit_predict(np.array(results_dict['embeddings']).reshape(-1, 512))
     results_dict['cluster_indices'] = cluster_indices
     df = pd.DataFrame(results_dict)
     return(df)
@@ -76,7 +77,7 @@ def cluster_statistics_multidata(blobs_folder_paths_list: List[str], model: enco
         for key, value in temp_results_dict.items():
             results_dict[key].extend(value)
     k_means = KMeans(n_clusters = num_clusters)
-    cluster_indices = k_means.fit_predict(np.array(results_dict['embeddings']).reshape(-1, 2048))
+    cluster_indices = k_means.fit_predict(np.array(results_dict['embeddings']).reshape(-1, 512))
     results_dict['cluster_indices'] = cluster_indices
     df = pd.DataFrame(results_dict)
     return(df)
@@ -88,7 +89,7 @@ def evaluate_model(blobs_folder_path: str, model: encoderDecoder, num_clusters: 
         df.to_pickle('./df.p')
     y = df['gesture'].values.ravel()
     X = [np.array(v) for v in df['embeddings']]
-    X = np.array(X).reshape(-1, 2048)
+    X = np.array(X).reshape(-1, 512)
     classifier = XGBClassifier(n_estimators = 1000)
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 8765)
     
@@ -109,7 +110,7 @@ def evaluate_model_multidata(blobs_folder_paths_list: str, model: encoderDecoder
         df.to_pickle('./df.p')
     y = df['task'].values.ravel()
     X = [np.array(v) for v in df['embeddings']]
-    X = np.array(X).reshape(-1, 2048)
+    X = np.array(X).reshape(-1, 512)
     classifier = XGBClassifier(n_estimators = 1000)
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 5113)
     
@@ -301,17 +302,17 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
     
     y = df['skill'].values.ravel()
     X = [np.array(v) for v in df['embeddings']]
-    X = np.array(X).reshape(-1, 2048)
+    X = np.array(X).reshape(-1, 512)
 
     sampler_list = []
     iterations = os.listdir(experimental_setup_path)
     iterations = list(filter(lambda x: '.DS_Store' not in x, iterations))
     
     metrics = {'accuracy': [], 'precision': [], 'recall': [], 'f1-score': [], 'support': []}
+    metrics_train = {'accuracy': [], 'precision': [], 'recall': [], 'f1-score': [], 'support': []}
     itr = 0
     for iter_num in tqdm(iterations):
         directory_path = os.path.join(experimental_setup_path, iter_num)
-        
         train_indices = []
         test_indices = []
         
@@ -332,18 +333,19 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
                 except:
                     pass
             f.close()
-
         X_train = X[train_indices]
         y_train = y[train_indices]
         X_test = X[test_indices]
         y_test = y[test_indices]
 
-        classifier = XGBClassifier(n_estimators = 1000)
+        classifier = XGBClassifier(n_estimators = 1000,use_label_encoder=False)
         classifier.fit(X_train, y_train)
 
-        # y_hat = classifier.predict(X_train)
+        y_hat = classifier.predict(X_train)
         y_hat_test = classifier.predict(X_test)
+        report_train = classification_report(y_train,y_hat,output_dict = True)
         report_test = classification_report(y_test, y_hat_test, output_dict = True)
+
         # metrics['accuracy'] = (metrics['accuracy']*itr + report_test['accuracy'])/(itr + 1)
         # metrics['precision'] = (metrics['precision']*itr + report_test['weighted avg']['precision'])/(itr + 1)
         # metrics['recall'] = (metrics['recall']*itr + report_test['weighted avg']['recall'])/(itr + 1)
@@ -357,8 +359,24 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder, tran
         metrics['f1-score'].append(report_test['weighted avg']['f1-score'])
         metrics['support'].append(report_test['weighted avg']['support'])
         
-    for key, val in metrics.items():
-        print('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+        metrics_train['accuracy'].append(report_train['accuracy'])
+        metrics_train['precision'].append(report_train['weighted avg']['precision'])
+        metrics_train['recall'].append(report_train['weighted avg']['recall'])
+        metrics_train['f1-score'].append(report_train['weighted avg']['f1-score'])
+        metrics_train['support'].append(report_train['weighted avg']['support'])
+    
+    print("NUM: ",experimental_setup_path[-6])
+    with open("Test"+experimental_setup_path[-6]+".txt",'w') as f:
+        for key, val in metrics.items():
+            f.write('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+            print('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+        f.close()
+          
+    with open("Train"+experimental_setup_path[-6]+".txt",'w') as f:
+        for key, val in metrics_train.items():
+            f.write('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+            print('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
+        f.close()
 
 def main():
     blobs_folder_path = '../jigsaw_dataset/Suturing/blobs'
