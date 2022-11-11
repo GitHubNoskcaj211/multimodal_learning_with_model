@@ -43,6 +43,8 @@ conda activate torch
 conda install pytorch cuda92 -c pytorch
 pip install sklearn opencv-python tqdm pandas xgboost umap seaborn multipledispatch barbar
 pip install -U scikit-learn scipy matplotlib
+pip uninstall umap
+pip install umap-learn
 
 
 # Get Dataset
