@@ -1,6 +1,6 @@
 import argparse
 from ast import parse
-from training import train_encoder_decoder_embeddings, train_encoder_decoder_multidata_embeddings
+from training import train_encoder_decoder_embeddings
 from video_preprocessing import computeOpticalFlow, create_data_blobs
 from embeddings_cluster_explore import evaluate_model, evaluate_model_multidata, plot_umap_clusters, plot_umap_clusters_multidata, evaluate_model_superuser
 from neural_networks import encoderDecoder
@@ -14,6 +14,8 @@ def main() -> None:
     parser.add_argument('--lr', metavar='--lr', type=str)
     parser.add_argument('--num_epochs', metavar='--num_epochs', type=str)
     parser.add_argument('--blobs_folder_path', metavar='--blobs_folder_path', type=str)
+    parser.add_argument('--images_folder_path', metavar='--images_folder_path', type=str)
+    parser.add_argument('--suturing_folder_path', metavar='--suturing_folder_path', type=str)
     parser.add_argument('--weights_save_path', metavar='--weights_save_path', type=str)
 
     # Preprocess arguments
@@ -48,12 +50,12 @@ def main() -> None:
         except:
             num_epochs = 1000
         try:
-            blobs_folder_path = args.blobs_folder_path
-            if 'knot' or 'tying' in blobs_folder_path.lower():
+            suturing_folder_path = args.suturing_folder_path
+            if 'knot' or 'tying' in suturing_folder_path.lower():
                 dataset_name = 'Knot_Tying'
-            elif 'needle' or 'passing' in blobs_folder_path.lower():
+            elif 'needle' or 'passing' in suturing_folder_path.lower():
                 dataset_name = 'Needle_Passing'
-            elif 'suturing' in blobs_folder_path.lower():
+            elif 'suturing' in suturing_folder_path.lower():
                 dataset_name = 'Suturing'
             else:
                 dataset_name = 'dataset'
@@ -64,7 +66,7 @@ def main() -> None:
         except Exception as e:
             print(e)
 
-        train_encoder_decoder_embeddings(lr = lr, num_epochs = num_epochs, blobs_folder_path = blobs_folder_path, weights_save_path = weights_save_path, weight_decay = weight_decay, dataset_name = dataset_name)
+        train_encoder_decoder_embeddings(lr = lr, num_epochs = num_epochs, suturing_path = suturing_folder_path, weights_save_path = weights_save_path, weight_decay = weight_decay, dataset_name = dataset_name)
     
     elif args.mode == 'multidata_train':
         weight_decay = 1e-8
