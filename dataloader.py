@@ -62,7 +62,7 @@ class gestureBlobDataset:
         self.kinematics_folder = os.listdir(self.kinematics_folder_path)
         self.fps = 30
         self.min_frames = self.fps * 45
-        self.max_frames = self.fps * 90
+        self.max_frames = self.fps * 60
         self.kinematics_pred_frame_diff = self.fps * 1
 
     def __len__(self) -> int:
@@ -74,7 +74,7 @@ class gestureBlobDataset:
         curr_file_path = os.path.join(self.images_folder_path, curr_file_path)
         curr_kinematics_path = self.kinematics_folder[idx] 
         curr_kinematics_path = os.path.join(self.kinematics_folder_path, curr_kinematics_path) 
-        
+        print("Curr_File_Path: ",curr_file_path)
         video = torchvision.io.read_video(curr_file_path)[0]
         if video.shape[0] < self.max_frames:
             print('UH OH! Account for this edge case!')
