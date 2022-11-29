@@ -45,6 +45,7 @@ pip install sklearn opencv-python tqdm pandas xgboost umap seaborn multipledispa
 pip install -U scikit-learn scipy matplotlib
 pip uninstall umap
 pip install umap-learn
+pip install av
 
 
 # Get Dataset
