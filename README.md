@@ -68,7 +68,7 @@ Make sure the code started running OK (it should say 'Rescaling videos; Processi
 
 ### To train the network using your data_blobs. Run the following code:  
 
-<code>python3 main.py --mode 'train' --blobs_folder_path '../JIGSAWS/Suturing/blobs' --weights_save_path models</code> 
+<code>python3 main.py --num_epochs 1 --mode 'train' --suturing_folder_path ../JIGSAWS/Suturing/ --weights_save_path models/code> 
 
 ### To evaluate the network (remember to put your network into the models folder
 <code>python3 main.py --mode 'eval' --blobs_folder_path '../JIGSAWS/Suturing/blobs' --weights_save_path models</code> 
