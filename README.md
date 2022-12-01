@@ -45,6 +45,10 @@ pip install sklearn opencv-python tqdm pandas xgboost umap seaborn multipledispa
 pip install -U scikit-learn scipy matplotlib
 pip uninstall umap
 pip install umap-learn
+conda install torchvision -c pytorch
+pip uninstall numpy
+pip install numpy --upgrade --ignore-installed
+
 
 
 # Get Dataset
