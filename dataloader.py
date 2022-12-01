@@ -61,8 +61,9 @@ class gestureBlobDataset:
         self.images_folder = os.listdir(self.images_folder_path)
         self.kinematics_folder = os.listdir(self.kinematics_folder_path)
         self.fps = 30
-        self.min_frames = self.fps * 45
-        self.max_frames = self.fps * 90
+
+        self.min_frames = self.fps * 15
+        self.max_frames = self.fps * 30
         self.kinematics_pred_frame_diff = self.fps * 1
 
     def __len__(self) -> int:
@@ -74,11 +75,15 @@ class gestureBlobDataset:
         curr_file_path = os.path.join(self.images_folder_path, curr_file_path)
         curr_kinematics_path = self.kinematics_folder[idx] 
         curr_kinematics_path = os.path.join(self.kinematics_folder_path, curr_kinematics_path) 
-        
+        print("Curr_File_Path: ",curr_file_path)
         video = torchvision.io.read_video(curr_file_path)[0]
-        if video.shape[0] < self.max_frames:
-            print('UH OH! Account for this edge case!')
-        num_frames = random.randint(self.min_frames, self.max_frames)
+        num_frames = 0
+        if video.shape[0] < self.min_frames:
+            num_frames = video.shape[0]
+        elif video.shape[0] < self.max_frames:
+            num_frames = random.randint(self.min_frames, video.shape[0])
+        else:
+            num_frames = random.randint(self.min_frames, self.max_frames)
         # num_frames = 30
         start_frame = random.randint(0, video.shape[0] - num_frames - self.kinematics_pred_frame_diff)
         video = video[start_frame : start_frame + num_frames]
@@ -138,7 +143,7 @@ class gestureBlobDataset:
                     kinematics[i-self.kinematics_pred_frame_diff-start_frame][45] = float(line_nums[9+57])
                     kinematics[i-self.kinematics_pred_frame_diff-start_frame][46] = float(line_nums[10+57])
                     kinematics[i-self.kinematics_pred_frame_diff-start_frame][47] = float(line_nums[11+57])                
-        return video.float(), kinematics
+        return video, kinematics
 
 class gestureBlobBatchDataset:
     def __init__(self, gesture_dataset: gestureBlobDataset, random_tensor: str = 'random') -> None:

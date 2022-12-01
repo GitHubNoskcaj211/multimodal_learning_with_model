@@ -50,7 +50,7 @@ def train_encoder_decoder_embeddings(lr: float, num_epochs: int, suturing_path: 
             input_sequence, target_sequence = data
             input_sequence, target_sequence = input_sequence.squeeze(), target_sequence.squeeze()
             for i in range(input_sequence.shape[0]):
-                input = input_sequence[i].unsqueeze(0)
+                input = input_sequence[i].unsqueeze(0).float()
                 target = target_sequence[i].unsqueeze(0)
                 if torch.cuda.is_available():
                     input = input.cuda()
