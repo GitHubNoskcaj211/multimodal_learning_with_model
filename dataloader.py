@@ -61,15 +61,15 @@ class gestureBlobDataset:
         self.images_folder = os.listdir(self.images_folder_path)
         self.kinematics_folder = os.listdir(self.kinematics_folder_path)
         self.fps = 30
-        self.min_frames = self.fps * 15
-        self.max_frames = self.fps * 30
+        self.min_frames = self.fps * 45
+        self.max_frames = self.fps * 60
         self.kinematics_pred_frame_diff = self.fps * 1
 
     def __len__(self) -> int:
-        # return 1
-        return (len(self.kinematics_folder))
+        return 1
 
     def __getitem__(self, idx: int) -> torch.Tensor:
+        idx = random.randint(0, len(self.kinematics_folder) - 1)
         curr_file_path = self.images_folder[idx * 2 + 1]
         curr_file_path = os.path.join(self.images_folder_path, curr_file_path)
         curr_kinematics_path = self.kinematics_folder[idx] 
