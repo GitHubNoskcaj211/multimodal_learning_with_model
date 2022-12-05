@@ -206,3 +206,31 @@ class encoderDecoder(nn.Module):
         x = self.decoder(x)
         x = x.view(1, 48)
         return(x)
+
+class encoderDecoder2(nn.Module):
+    def __init__(self, num_lstm_layers, embedding_dim):
+        super(encoderDecoder2, self).__init__()
+        
+        self.encoder = torch.nn.Sequential(torch.nn.Linear(48, 96), 
+        nn.ReLU(), 
+        torch.nn.Linear(96, 192), 
+        nn.ReLU(),
+        nn.Linear(192, embedding_dim))
+        
+        self.LSTM = nn.LSTM(input_size=embedding_dim, hidden_size=embedding_dim,
+                            num_layers=num_lstm_layers, batch_first=True)
+        
+        self.decoder = torch.nn.Sequential(torch.nn.Linear(embedding_dim, 128), 
+        nn.ReLU(), 
+        torch.nn.Linear(128, 1024), 
+        nn.ReLU(),
+        nn.Linear(1024, 4096), 
+        nn.ReLU(),
+        nn.Linear(4096, 48))
+        
+    def forward(self, x):
+        x = self.encoder(x)
+        x, h = self.LSTM(x)
+        x = self.decoder(x)
+        x = x.view(1, -1, 48)
+        return(x)

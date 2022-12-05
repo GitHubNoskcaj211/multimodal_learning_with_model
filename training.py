@@ -1,7 +1,7 @@
 import torch
 import numpy as np
-from neural_networks import multiModalRepresentation_diff, multiModalRepresentation, encoderDecoder
-from dataloader import gestureBlobDataset, gestureBlobBatchDataset, gestureBlobMultiDataset, size_collate_fn
+from neural_networks import multiModalRepresentation_diff, multiModalRepresentation, encoderDecoder, encoderDecoder2
+from dataloader import gestureBlobDataset, gestureBlobBatchDataset, gestureBlobMultiDataset, gestureBlobDataset2, size_collate_fn
 from torch.utils.data import DataLoader
 from sklearn.metrics import classification_report
 import os
@@ -26,12 +26,12 @@ def train_encoder_decoder_embeddings(lr: float, num_epochs: int, suturing_path: 
     if not os.path.exists(weights_save_path):
         os.makedirs(weights_save_path)
 
-    gesture_dataset = gestureBlobDataset(suturing_path = suturing_path)
+    gesture_dataset = gestureBlobDataset2(suturing_path = suturing_path)
     dataloader = DataLoader(dataset = gesture_dataset, batch_size = 128, shuffle = False, collate_fn = size_collate_fn)
 
     loss_function = torch.nn.L1Loss()
     # loss_function = torch.nn.KLDivLoss()
-    net = encoderDecoder(num_lstm_layers = 2, embedding_dim = 512)
+    net = encoderDecoder2(num_lstm_layers = 2, embedding_dim = 512)
     net = net.train()
     if torch.cuda.is_available():
         net.cuda()
@@ -50,7 +50,8 @@ def train_encoder_decoder_embeddings(lr: float, num_epochs: int, suturing_path: 
             input_sequence, target_sequence = data
             input_sequence, target_sequence = input_sequence.squeeze(), target_sequence.squeeze()
             for i in range(input_sequence.shape[0]):
-                input = input_sequence[i].unsqueeze(0).float()
+                # input = input_sequence[i].unsqueeze(0).float()
+                input = input_sequence[i].unsqueeze(0)
                 target = target_sequence[i].unsqueeze(0)
                 if torch.cuda.is_available():
                     input = input.cuda()
@@ -62,16 +63,16 @@ def train_encoder_decoder_embeddings(lr: float, num_epochs: int, suturing_path: 
                 running_loss += loss.item()
                 count += 1
             optimizer.step()
+        with open("kin_to_kin_training.txt", "a") as f:
+            f.write('\n Epoch: {}, Loss: {}'.format(epoch + 1, running_loss/count))
         print('\n Epoch: {}, Loss: {}'.format(epoch + 1, running_loss/count))
 
     print('Finished training.')
     print('Saving state dict.')
 
-    # now = datetime.now()
-    # now = '_'.join((str(now).split('.')[0]).split(' '))
-    # file_name = 'multimodal_' + dataset_name + '_' + now + '.pth'
-    # file_name = os.path.join(weights_save_path, file_name)
-    # torch.save(net.state_dict(), file_name)
+    file_name = 'multimodal_kin_to_kin.pth'
+    file_name = os.path.join(weights_save_path, file_name)
+    torch.save(net.state_dict(), file_name)
 
     # print('State dict saved at timestamp {}'.format(now))
 
