@@ -74,7 +74,7 @@ class gestureBlobDataset:
         curr_file_path = os.path.join(self.images_folder_path, curr_file_path)
         curr_kinematics_path = self.kinematics_folder[idx] 
         curr_kinematics_path = os.path.join(self.kinematics_folder_path, curr_kinematics_path) 
-        
+        print("Curr_File_Path: ",curr_file_path)
         video = torchvision.io.read_video(curr_file_path)[0]
         num_frames = 0
         if video.shape[0] < self.min_frames:

@@ -74,7 +74,7 @@ def train_encoder_decoder_embeddings(lr: float, num_epochs: int, suturing_path: 
     file_name = os.path.join(weights_save_path, file_name)
     torch.save(net.state_dict(), file_name)
 
-    # print('State dict saved at timestamp {}'.format(now))
+    print('State dict saved at timestamp {}'.format(now))
 
 def main():
     blobs_folder_path = '../jigsaw_dataset/Knot_Tying/blobs'

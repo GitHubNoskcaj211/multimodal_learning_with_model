@@ -202,6 +202,7 @@ class encoderDecoder(nn.Module):
         
     def forward(self, x):
         x = self.conv_net_stream(x)
+        x = x.unsqueeze(0)
         x, h = self.LSTM(x)
         x = self.decoder(x)
         x = x.view(1, 48)

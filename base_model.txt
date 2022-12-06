@@ -1,0 +1,1004 @@
+Using CUDA
+Epoch 1
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_G001_capture2.avi
+
+ Epoch: 1, Loss: nan
+Epoch 2
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B004_capture1.avi
+
+ Epoch: 2, Loss: 0.4184404704138864
+Epoch 3
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 3, Loss: 0.3974450266691228
+Epoch 4
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture2.avi
+
+ Epoch: 4, Loss: 0.40643012095729014
+Epoch 5
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E005_capture1.avi
+
+ Epoch: 5, Loss: 0.4081321222194727
+Epoch 6
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 6, Loss: 0.3944323740933807
+Epoch 7
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture1.avi
+
+ Epoch: 7, Loss: 0.38821543871846304
+Epoch 8
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E005_capture1.avi
+
+ Epoch: 8, Loss: 0.3940360272841596
+Epoch 9
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E005_capture2.avi
+
+ Epoch: 9, Loss: 0.38252960258480523
+Epoch 10
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 10, Loss: 0.36776318055721485
+Epoch 11
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 11, Loss: 0.3721326346882803
+Epoch 12
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 12, Loss: 0.36456586227146653
+Epoch 13
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture2.avi
+
+ Epoch: 13, Loss: 0.368870789744473
+Epoch 14
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D001_capture1.avi
+
+ Epoch: 14, Loss: 0.351030276744934
+Epoch 15
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C005_capture1.avi
+
+ Epoch: 15, Loss: 0.34850276223144805
+Epoch 16
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 16, Loss: 0.3378463436270614
+Epoch 17
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 17, Loss: 0.35063705782281274
+Epoch 18
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 18, Loss: 0.34903071087572846
+Epoch 19
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 19, Loss: 0.32833181013970564
+Epoch 20
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture1.avi
+
+ Epoch: 20, Loss: 0.34009614397672927
+Epoch 21
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 21, Loss: 0.30787612878029386
+Epoch 22
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I004_capture1.avi
+
+ Epoch: 22, Loss: 0.31865964813413145
+Epoch 23
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 23, Loss: 0.31519910261378636
+Epoch 24
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 24, Loss: nan
+Epoch 25
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 25, Loss: 0.3083476223181349
+Epoch 26
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 26, Loss: 0.27916538923132683
+Epoch 27
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C005_capture1.avi
+
+ Epoch: 27, Loss: 0.28775973113031394
+Epoch 28
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 28, Loss: 0.29155406470554485
+Epoch 29
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 29, Loss: 0.29044927409960597
+Epoch 30
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B004_capture1.avi
+
+ Epoch: 30, Loss: 0.27037570184613113
+Epoch 31
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 31, Loss: 0.25925165207339335
+Epoch 32
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E003_capture1.avi
+
+ Epoch: 32, Loss: 0.2661189349436424
+Epoch 33
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B005_capture2.avi
+
+ Epoch: 33, Loss: 0.3004488430125062
+Epoch 34
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 34, Loss: 0.3073878633940291
+Epoch 35
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture1.avi
+
+ Epoch: 35, Loss: 0.2804374098419785
+Epoch 36
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C003_capture2.avi
+
+ Epoch: 36, Loss: nan
+Epoch 37
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 37, Loss: 0.27515383968927437
+Epoch 38
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 38, Loss: 0.300456540054593
+Epoch 39
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture1.avi
+
+ Epoch: 39, Loss: 0.31534956913927326
+Epoch 40
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 40, Loss: 0.26596330939195095
+Epoch 41
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C005_capture1.avi
+
+ Epoch: 41, Loss: 0.2697428520756044
+Epoch 42
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 42, Loss: 0.2952235573278763
+Epoch 43
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C005_capture1.avi
+
+ Epoch: 43, Loss: 0.27204957951671976
+Epoch 44
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B001_capture1.avi
+
+ Epoch: 44, Loss: 0.2657703859823281
+Epoch 45
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 45, Loss: 0.2857191969462333
+Epoch 46
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 46, Loss: 0.257212093676901
+Epoch 47
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 47, Loss: 0.29319876847850285
+Epoch 48
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C003_capture1.avi
+
+ Epoch: 48, Loss: 0.29631871016113304
+Epoch 49
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F001_capture1.avi
+
+ Epoch: 49, Loss: 0.304102223862463
+Epoch 50
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D001_capture1.avi
+
+ Epoch: 50, Loss: 0.3046234156968614
+Epoch 51
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 51, Loss: 0.2682510693930219
+Epoch 52
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 52, Loss: nan
+Epoch 53
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture2.avi
+
+ Epoch: 53, Loss: 0.27860824417855057
+Epoch 54
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 54, Loss: 0.2484652347951232
+Epoch 55
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 55, Loss: 0.30392422041167383
+Epoch 56
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C003_capture2.avi
+
+ Epoch: 56, Loss: nan
+Epoch 57
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 57, Loss: 0.2923001832698458
+Epoch 58
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B001_capture1.avi
+
+ Epoch: 58, Loss: nan
+Epoch 59
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E003_capture1.avi
+
+ Epoch: 59, Loss: 0.25221724941508405
+Epoch 60
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture1.avi
+
+ Epoch: 60, Loss: 0.28237160255655575
+Epoch 61
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 61, Loss: 0.267260399352455
+Epoch 62
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E003_capture1.avi
+
+ Epoch: 62, Loss: nan
+Epoch 63
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 63, Loss: 0.272388137287676
+Epoch 64
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C003_capture1.avi
+
+ Epoch: 64, Loss: 0.290503422465913
+Epoch 65
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture2.avi
+
+ Epoch: 65, Loss: 0.29670768910004885
+Epoch 66
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture1.avi
+
+ Epoch: 66, Loss: 0.2940124167284837
+Epoch 67
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 67, Loss: 0.29679979837957754
+Epoch 68
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 68, Loss: 0.27838928410682123
+Epoch 69
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B004_capture1.avi
+
+ Epoch: 69, Loss: 0.26376858745394344
+Epoch 70
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture2.avi
+
+ Epoch: 70, Loss: 0.2878081749040714
+Epoch 71
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B001_capture1.avi
+
+ Epoch: 71, Loss: 0.2665034342346031
+Epoch 72
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 72, Loss: 0.2892848892928728
+Epoch 73
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I005_capture1.avi
+
+ Epoch: 73, Loss: 0.38443477067996407
+Epoch 74
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E003_capture1.avi
+
+ Epoch: 74, Loss: 0.24478901201552944
+Epoch 75
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C003_capture1.avi
+
+ Epoch: 75, Loss: 0.28031308410161426
+Epoch 76
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B001_capture1.avi
+
+ Epoch: 76, Loss: 0.24875027328831345
+Epoch 77
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 77, Loss: 0.26149235640724117
+Epoch 78
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture2.avi
+
+ Epoch: 78, Loss: 0.28778087502948896
+Epoch 79
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 79, Loss: 0.31252965243478503
+Epoch 80
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 80, Loss: nan
+Epoch 81
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 81, Loss: 0.31292739229423644
+Epoch 82
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 82, Loss: 0.30431367928146297
+Epoch 83
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture1.avi
+
+ Epoch: 83, Loss: 0.25651736535958686
+Epoch 84
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 84, Loss: 0.26645628670134497
+Epoch 85
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F001_capture1.avi
+
+ Epoch: 85, Loss: 0.29641870909034385
+Epoch 86
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 86, Loss: 0.2576570855019572
+Epoch 87
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 87, Loss: 0.29524211903149233
+Epoch 88
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 88, Loss: nan
+Epoch 89
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I005_capture1.avi
+
+ Epoch: 89, Loss: 0.37158208086664524
+Epoch 90
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I004_capture1.avi
+
+ Epoch: 90, Loss: 5494897428.000119
+Epoch 91
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture2.avi
+
+ Epoch: 91, Loss: 0.2830661720869398
+Epoch 92
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B004_capture1.avi
+
+ Epoch: 92, Loss: 0.24712700303270915
+Epoch 93
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 93, Loss: 0.2549431296180293
+Epoch 94
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B004_capture1.avi
+
+ Epoch: 94, Loss: 0.2761485236992093
+Epoch 95
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture1.avi
+
+ Epoch: 95, Loss: 0.2906806804086024
+Epoch 96
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 96, Loss: 0.2857550538989694
+Epoch 97
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture1.avi
+
+ Epoch: 97, Loss: 0.27892680321875296
+Epoch 98
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture1.avi
+
+ Epoch: 98, Loss: 0.2557033501726924
+Epoch 99
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 99, Loss: 0.2557108278360662
+Epoch 100
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture1.avi
+
+ Epoch: 100, Loss: nan
+Epoch 101
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 101, Loss: 0.23282082529698053
+Epoch 102
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture2.avi
+
+ Epoch: 102, Loss: 0.27244565080650684
+Epoch 103
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 103, Loss: 0.3152931141914675
+Epoch 104
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 104, Loss: 0.2998771266328974
+Epoch 105
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture1.avi
+
+ Epoch: 105, Loss: 0.2914327955995121
+Epoch 106
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture1.avi
+
+ Epoch: 106, Loss: 0.29748039347512345
+Epoch 107
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture2.avi
+
+ Epoch: 107, Loss: 0.29400473044258285
+Epoch 108
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D001_capture1.avi
+
+ Epoch: 108, Loss: 0.320606727253307
+Epoch 109
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 109, Loss: 0.2990271219351787
+Epoch 110
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 110, Loss: 0.25488790829416247
+Epoch 111
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E005_capture2.avi
+
+ Epoch: 111, Loss: 0.3262105551324983
+Epoch 112
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 112, Loss: nan
+Epoch 113
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 113, Loss: 0.28623053510649216
+Epoch 114
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H004_capture2.avi
+
+ Epoch: 114, Loss: 0.30003081192038217
+Epoch 115
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture1.avi
+
+ Epoch: 115, Loss: 0.286645073091351
+Epoch 116
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture2.avi
+
+ Epoch: 116, Loss: 0.2820703052336417
+Epoch 117
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture1.avi
+
+ Epoch: 117, Loss: 0.25189546637522703
+Epoch 118
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture1.avi
+
+ Epoch: 118, Loss: 0.25203166206941435
+Epoch 119
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture2.avi
+
+ Epoch: 119, Loss: 0.2993287379319136
+Epoch 120
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_G001_capture2.avi
+
+ Epoch: 120, Loss: nan
+Epoch 121
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 121, Loss: 0.30938196464508466
+Epoch 122
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H004_capture2.avi
+
+ Epoch: 122, Loss: nan
+Epoch 123
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 123, Loss: 0.2638657655498831
+Epoch 124
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 124, Loss: 0.2920547721229616
+Epoch 125
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture2.avi
+
+ Epoch: 125, Loss: 0.2872968204403191
+Epoch 126
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture1.avi
+
+ Epoch: 126, Loss: 0.27280131140617675
+Epoch 127
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 127, Loss: 0.2908824838632155
+Epoch 128
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 128, Loss: 0.3086811846021622
+Epoch 129
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C005_capture1.avi
+
+ Epoch: 129, Loss: 0.2571031457960269
+Epoch 130
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 130, Loss: 0.27113229244254355
+Epoch 131
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 131, Loss: 0.3020912039429279
+Epoch 132
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 132, Loss: 0.2585625865409527
+Epoch 133
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 133, Loss: 0.2778726286633545
+Epoch 134
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C005_capture1.avi
+
+ Epoch: 134, Loss: 0.260486088558222
+Epoch 135
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 135, Loss: 0.24442218476934624
+Epoch 136
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 136, Loss: 0.30199960733212106
+Epoch 137
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 137, Loss: 0.28274209205026596
+Epoch 138
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 138, Loss: 0.3007525752616834
+Epoch 139
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I004_capture1.avi
+
+ Epoch: 139, Loss: nan
+Epoch 140
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 140, Loss: 0.26139709112351905
+Epoch 141
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 141, Loss: 0.279238664372125
+Epoch 142
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I005_capture1.avi
+
+ Epoch: 142, Loss: 0.3482130176763165
+Epoch 143
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture2.avi
+
+ Epoch: 143, Loss: 0.28551356514281706
+Epoch 144
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 144, Loss: 0.2539216394165399
+Epoch 145
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C003_capture1.avi
+
+ Epoch: 145, Loss: 0.2954449970225227
+Epoch 146
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C005_capture1.avi
+
+ Epoch: 146, Loss: 0.2711864021403227
+Epoch 147
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 147, Loss: 0.29721330305580074
+Epoch 148
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 148, Loss: 0.27068573796985956
+Epoch 149
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 149, Loss: 0.27063253473613863
+Epoch 150
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 150, Loss: 0.29933273669306215
+Epoch 151
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H004_capture2.avi
+
+ Epoch: 151, Loss: nan
+Epoch 152
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 152, Loss: 0.25036392087043996
+Epoch 153
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 153, Loss: 0.27664256363565976
+Epoch 154
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 154, Loss: 0.2691870914166491
+Epoch 155
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture1.avi
+
+ Epoch: 155, Loss: 0.261843493160529
+Epoch 156
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E003_capture1.avi
+
+ Epoch: 156, Loss: 0.2589498706337392
+Epoch 157
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 157, Loss: 0.275604594963631
+Epoch 158
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 158, Loss: 0.253781248080103
+Epoch 159
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture1.avi
+
+ Epoch: 159, Loss: 0.25712511501460844
+Epoch 160
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture2.avi
+
+ Epoch: 160, Loss: 0.2870487126522971
+Epoch 161
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 161, Loss: 0.3046580173337928
+Epoch 162
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_G001_capture2.avi
+
+ Epoch: 162, Loss: nan
+Epoch 163
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 163, Loss: 0.25598048596580825
+Epoch 164
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 164, Loss: 0.30499871977344506
+Epoch 165
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 165, Loss: 0.2467339103356821
+Epoch 166
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 166, Loss: 0.3033524664201847
+Epoch 167
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I004_capture1.avi
+
+ Epoch: 167, Loss: nan
+Epoch 168
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 168, Loss: 0.2952698431729614
+Epoch 169
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F001_capture1.avi
+
+ Epoch: 169, Loss: 0.307508252848366
+Epoch 170
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C003_capture1.avi
+
+ Epoch: 170, Loss: 0.2947137645805656
+Epoch 171
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 171, Loss: 0.2930168245574335
+Epoch 172
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 172, Loss: 0.26626986043635564
+Epoch 173
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 173, Loss: 0.25986697147372795
+Epoch 174
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 174, Loss: 0.29214005125015546
+Epoch 175
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 175, Loss: 0.29331880493457263
+Epoch 176
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture2.avi
+
+ Epoch: 176, Loss: 0.29647993172561243
+Epoch 177
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture2.avi
+
+ Epoch: 177, Loss: 0.2834509014641797
+Epoch 178
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture2.avi
+
+ Epoch: 178, Loss: 0.295396612212272
+Epoch 179
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture2.avi
+
+ Epoch: 179, Loss: 0.29825394071472117
+Epoch 180
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 180, Loss: 0.28088350118581806
+Epoch 181
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 181, Loss: 0.29876468432544845
+Epoch 182
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 182, Loss: 0.3002069401199167
+Epoch 183
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B005_capture2.avi
+
+ Epoch: 183, Loss: 0.2867810432823041
+Epoch 184
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F002_capture2.avi
+
+ Epoch: 184, Loss: 0.2497139279032401
+Epoch 185
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 185, Loss: 0.2939207304512866
+Epoch 186
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 186, Loss: nan
+Epoch 187
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture1.avi
+
+ Epoch: 187, Loss: 0.2715261055498707
+Epoch 188
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 188, Loss: 0.2650938495141317
+Epoch 189
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E003_capture1.avi
+
+ Epoch: 189, Loss: 0.26714709796672204
+Epoch 190
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture1.avi
+
+ Epoch: 190, Loss: 0.2670840721523484
+Epoch 191
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 191, Loss: 0.25267887688955853
+Epoch 192
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture1.avi
+
+ Epoch: 192, Loss: 0.322137158372661
+Epoch 193
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 193, Loss: 0.2669959933404903
+Epoch 194
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 194, Loss: 0.27577403698433095
+Epoch 195
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C001_capture1.avi
+
+ Epoch: 195, Loss: 0.26139701734942067
+Epoch 196
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 196, Loss: nan
+Epoch 197
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture1.avi
+
+ Epoch: 197, Loss: 0.2963673594779952
+Epoch 198
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B001_capture1.avi
+
+ Epoch: 198, Loss: 0.26945755219857126
+Epoch 199
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 199, Loss: 0.3054932853443453
+Epoch 200
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture2.avi
+
+ Epoch: 200, Loss: 0.3017993864707568
+Epoch 201
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture2.avi
+
+ Epoch: 201, Loss: 0.2936567684740062
+Epoch 202
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B001_capture1.avi
+
+ Epoch: 202, Loss: 0.2573760309400732
+Epoch 203
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E003_capture1.avi
+
+ Epoch: 203, Loss: nan
+Epoch 204
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 204, Loss: 0.30667758860011446
+Epoch 205
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 205, Loss: 0.3049683402291755
+Epoch 206
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_G001_capture2.avi
+
+ Epoch: 206, Loss: nan
+Epoch 207
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 207, Loss: 0.3067219166591161
+Epoch 208
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B005_capture2.avi
+
+ Epoch: 208, Loss: 0.29404191447839845
+Epoch 209
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 209, Loss: 0.25869406758774444
+Epoch 210
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H004_capture2.avi
+
+ Epoch: 210, Loss: nan
+Epoch 211
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E005_capture1.avi
+
+ Epoch: 211, Loss: 0.2803065062702051
+Epoch 212
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_G001_capture2.avi
+
+ Epoch: 212, Loss: nan
+Epoch 213
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 213, Loss: 0.2996512299179224
+Epoch 214
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I004_capture1.avi
+
+ Epoch: 214, Loss: 0.30114928631537213
+Epoch 215
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 215, Loss: 0.2684549622020244
+Epoch 216
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 216, Loss: 0.2710527268931729
+Epoch 217
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_G001_capture2.avi
+
+ Epoch: 217, Loss: nan
+Epoch 218
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H004_capture2.avi
+
+ Epoch: 218, Loss: nan
+Epoch 219
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F001_capture1.avi
+
+ Epoch: 219, Loss: 0.3077371005528893
+Epoch 220
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_C003_capture2.avi
+
+ Epoch: 220, Loss: nan
+Epoch 221
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture1.avi
+
+ Epoch: 221, Loss: 0.3164827789265913
+Epoch 222
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 222, Loss: 0.2956249931641946
+Epoch 223
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H003_capture2.avi
+
+ Epoch: 223, Loss: 0.3008451322214209
+Epoch 224
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H004_capture2.avi
+
+ Epoch: 224, Loss: nan
+Epoch 225
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D002_capture1.avi
+
+ Epoch: 225, Loss: 0.26767185934795074
+Epoch 226
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I004_capture1.avi
+
+ Epoch: 226, Loss: 0.29619959895964415
+Epoch 227
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 227, Loss: 0.2903368956048861
+Epoch 228
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B001_capture1.avi
+
+ Epoch: 228, Loss: 0.27243373035462654
+Epoch 229
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture1.avi
+
+ Epoch: 229, Loss: nan
+Epoch 230
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D001_capture1.avi
+
+ Epoch: 230, Loss: 0.2882829090385846
+Epoch 231
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 231, Loss: 0.2855976648189165
+Epoch 232
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 232, Loss: 0.28131128333390076
+Epoch 233
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E004_capture2.avi
+
+ Epoch: 233, Loss: 0.25383759039448717
+Epoch 234
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I005_capture1.avi
+
+ Epoch: 234, Loss: 0.3388320583143214
+Epoch 235
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture2.avi
+
+ Epoch: 235, Loss: 0.27103429115001737
+Epoch 236
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 236, Loss: 0.27852828079139
+Epoch 237
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E003_capture1.avi
+
+ Epoch: 237, Loss: 0.2653580522797123
+Epoch 238
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D001_capture1.avi
+
+ Epoch: 238, Loss: 0.2757968215323604
+Epoch 239
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D001_capture1.avi
+
+ Epoch: 239, Loss: nan
+Epoch 240
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F005_capture2.avi
+
+ Epoch: 240, Loss: 0.27551570616020804
+Epoch 241
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_B002_capture2.avi
+
+ Epoch: 241, Loss: 0.307455873898396
+Epoch 242
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture2.avi
+
+ Epoch: 242, Loss: 0.2668441124477152
+Epoch 243
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_I001_capture1.avi
+
+ Epoch: 243, Loss: nan
+Epoch 244
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D003_capture1.avi
+
+ Epoch: 244, Loss: 0.27183246968835384
+Epoch 245
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E005_capture2.avi
+
+ Epoch: 245, Loss: 0.2861202169160048
+Epoch 246
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F003_capture1.avi
+
+ Epoch: 246, Loss: 0.28900187131380045
+Epoch 247
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_D004_capture2.avi
+
+ Epoch: 247, Loss: 0.28817500535086915
+Epoch 248
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_F004_capture1.avi
+
+ Epoch: 248, Loss: 0.29446817534098013
+Epoch 249
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_E002_capture2.avi
+
+ Epoch: 249, Loss: 0.27875869759597505
+Epoch 250
+Curr_File_Path:  ../JIGSAWS/Suturing/video/Suturing_H004_capture2.avi
+
+ Epoch: 250, Loss: nan
+Finished training.
+Saving state dict.
+State dict saved at timestamp 2022-12-05_17:45:32

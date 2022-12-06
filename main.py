@@ -3,7 +3,7 @@ from ast import parse
 from training import train_encoder_decoder_embeddings
 from video_preprocessing import computeOpticalFlow, create_data_blobs
 from embeddings_cluster_explore import evaluate_model, evaluate_model_multidata, plot_umap_clusters, plot_umap_clusters_multidata, evaluate_model_superuser
-from neural_networks import encoderDecoder
+from neural_networks import encoderDecoder, encoderDecoder2
 import torch
 
 def main() -> None:
@@ -159,13 +159,16 @@ def main() -> None:
         except:
             model_dim = 2048
             
-        model = encoderDecoder(embedding_dim = model_dim)
-        model.load_state_dict(torch.load(weights_save_path))
+        model = encoderDecoder2(2,512)
+        model.load_state_dict(torch.load(weights_save_path, map_location=torch.device('cpu'))) # TODO Remove if uploading
+        blobs_folder_path = '../JIGSAWS/Suturing/Kinematics/AllGesturesWithLabels/'
         transcriptions_path = '../JIGSAWS/Suturing/transcriptions/'
         experimental_setup_path = '../JIGSAWS/Experimental_setup/Suturing/Balanced/GestureClassification/UserOut/'
         for i in range(8):
+            print('user' + str(i))
             setup_path = experimental_setup_path+str(i+1)+"_Out/"
-            evaluate_model_superuser(blobs_folder_path=blobs_folder_path,model=model,transcriptions_path=transcriptions_path,experimental_setup_path=setup_path)
+            # evaluate_model_superuser(blobs_folder_path=blobs_folder_path,model=model,transcriptions_path=transcriptions_path,experimental_setup_path=setup_path, i)
+            evaluate_model_superuser(blobs_folder_path, model, i)
 
     else:
         print('Mode is not recognized. Options are optical_flow, data_blobs, train, multidata_train, or eval')

@@ -1,0 +1,753 @@
+Using CUDA
+Epoch 1
+
+ Epoch: 1, Loss: 0.41007160439210777
+Epoch 2
+
+ Epoch: 2, Loss: 0.40422648191452026
+Epoch 3
+
+ Epoch: 3, Loss: 0.397754265981562
+Epoch 4
+
+ Epoch: 4, Loss: 0.3924524266930187
+Epoch 5
+
+ Epoch: 5, Loss: 0.38810674495556774
+Epoch 6
+
+ Epoch: 6, Loss: 0.383416333619286
+Epoch 7
+
+ Epoch: 7, Loss: 0.3785202590858235
+Epoch 8
+
+ Epoch: 8, Loss: 0.3731168990626055
+Epoch 9
+
+ Epoch: 9, Loss: 0.36866992098443646
+Epoch 10
+
+ Epoch: 10, Loss: 0.3636089396827361
+Epoch 11
+
+ Epoch: 11, Loss: 0.357307947733823
+Epoch 12
+
+ Epoch: 12, Loss: 0.352120281142347
+Epoch 13
+
+ Epoch: 13, Loss: 0.3462987489560071
+Epoch 14
+
+ Epoch: 14, Loss: 0.33885107934474945
+Epoch 15
+
+ Epoch: 15, Loss: 0.3320619385032093
+Epoch 16
+
+ Epoch: 16, Loss: 0.32527197196203117
+Epoch 17
+
+ Epoch: 17, Loss: 0.31608714689226713
+Epoch 18
+
+ Epoch: 18, Loss: 0.3091297219781315
+Epoch 19
+
+ Epoch: 19, Loss: 0.3020005392677644
+Epoch 20
+
+ Epoch: 20, Loss: 0.295132296926835
+Epoch 21
+
+ Epoch: 21, Loss: 0.29728349561200423
+Epoch 22
+
+ Epoch: 22, Loss: 0.29779038227656307
+Epoch 23
+
+ Epoch: 23, Loss: 0.2939295935280183
+Epoch 24
+
+ Epoch: 24, Loss: 0.2861679367282811
+Epoch 25
+
+ Epoch: 25, Loss: 0.28430761922808256
+Epoch 26
+
+ Epoch: 26, Loss: 0.28284038866267486
+Epoch 27
+
+ Epoch: 27, Loss: 0.2842818568734562
+Epoch 28
+
+ Epoch: 28, Loss: 0.2828109242460307
+Epoch 29
+
+ Epoch: 29, Loss: 0.2821972422740039
+Epoch 30
+
+ Epoch: 30, Loss: 0.2816898042664808
+Epoch 31
+
+ Epoch: 31, Loss: 0.28097842020146985
+Epoch 32
+
+ Epoch: 32, Loss: 0.28034840173581066
+Epoch 33
+
+ Epoch: 33, Loss: 0.28401779120459275
+Epoch 34
+
+ Epoch: 34, Loss: 0.2774687589091413
+Epoch 35
+
+ Epoch: 35, Loss: 0.28012608079349294
+Epoch 36
+
+ Epoch: 36, Loss: 0.2786492249544929
+Epoch 37
+
+ Epoch: 37, Loss: 0.27878470806514516
+Epoch 38
+
+ Epoch: 38, Loss: 0.2819045094006202
+Epoch 39
+
+ Epoch: 39, Loss: 0.2780211993000087
+Epoch 40
+
+ Epoch: 40, Loss: 0.278744192684398
+Epoch 41
+
+ Epoch: 41, Loss: 0.27804486278225393
+Epoch 42
+
+ Epoch: 42, Loss: 0.27828892495702295
+Epoch 43
+
+ Epoch: 43, Loss: 0.2797393868951237
+Epoch 44
+
+ Epoch: 44, Loss: 0.2803807486506069
+Epoch 45
+
+ Epoch: 45, Loss: 0.279012390795876
+Epoch 46
+
+ Epoch: 46, Loss: 0.2761669031837407
+Epoch 47
+
+ Epoch: 47, Loss: 0.2780360163134687
+Epoch 48
+
+ Epoch: 48, Loss: 0.2748236274894546
+Epoch 49
+
+ Epoch: 49, Loss: 0.2766241681049852
+Epoch 50
+
+ Epoch: 50, Loss: 0.27382802875602946
+Epoch 51
+
+ Epoch: 51, Loss: 0.2746213543064454
+Epoch 52
+
+ Epoch: 52, Loss: 0.27498899575542
+Epoch 53
+
+ Epoch: 53, Loss: 0.2744435554041582
+Epoch 54
+
+ Epoch: 54, Loss: 0.2702592804151423
+Epoch 55
+
+ Epoch: 55, Loss: 0.26976077565375495
+Epoch 56
+
+ Epoch: 56, Loss: 0.27057043945088105
+Epoch 57
+
+ Epoch: 57, Loss: 0.26617330444209714
+Epoch 58
+
+ Epoch: 58, Loss: 0.26885203841854544
+Epoch 59
+
+ Epoch: 59, Loss: 0.26381927816306844
+Epoch 60
+
+ Epoch: 60, Loss: 0.2649270962266361
+Epoch 61
+
+ Epoch: 61, Loss: 0.26233051279011893
+Epoch 62
+
+ Epoch: 62, Loss: 0.25969578413402333
+Epoch 63
+
+ Epoch: 63, Loss: 0.25881847914527445
+Epoch 64
+
+ Epoch: 64, Loss: 0.2542765333372004
+Epoch 65
+
+ Epoch: 65, Loss: 0.2504861004212323
+Epoch 66
+
+ Epoch: 66, Loss: 0.254058194511077
+Epoch 67
+
+ Epoch: 67, Loss: 0.24836498981013017
+Epoch 68
+
+ Epoch: 68, Loss: 0.24560916862067053
+Epoch 69
+
+ Epoch: 69, Loss: 0.2427315856604015
+Epoch 70
+
+ Epoch: 70, Loss: 0.24263802039272644
+Epoch 71
+
+ Epoch: 71, Loss: 0.23817824572324753
+Epoch 72
+
+ Epoch: 72, Loss: 0.23657355063101826
+Epoch 73
+
+ Epoch: 73, Loss: 0.23540322307278128
+Epoch 74
+
+ Epoch: 74, Loss: 0.22934826288153143
+Epoch 75
+
+ Epoch: 75, Loss: 0.22432368599316654
+Epoch 76
+
+ Epoch: 76, Loss: 0.2209196239709854
+Epoch 77
+
+ Epoch: 77, Loss: 0.21649403125047684
+Epoch 78
+
+ Epoch: 78, Loss: 0.217701054232962
+Epoch 79
+
+ Epoch: 79, Loss: 0.21500435909804175
+Epoch 80
+
+ Epoch: 80, Loss: 0.2116149738430977
+Epoch 81
+
+ Epoch: 81, Loss: 0.2103741738726111
+Epoch 82
+
+ Epoch: 82, Loss: 0.20991114044890685
+Epoch 83
+
+ Epoch: 83, Loss: 0.20222859610529506
+Epoch 84
+
+ Epoch: 84, Loss: 0.2061484990751042
+Epoch 85
+
+ Epoch: 85, Loss: 0.2031095317181419
+Epoch 86
+
+ Epoch: 86, Loss: 0.20565954946419773
+Epoch 87
+
+ Epoch: 87, Loss: 0.20614597595789852
+Epoch 88
+
+ Epoch: 88, Loss: 0.20363938501652548
+Epoch 89
+
+ Epoch: 89, Loss: 0.20008689822519526
+Epoch 90
+
+ Epoch: 90, Loss: 0.20291466265916824
+Epoch 91
+
+ Epoch: 91, Loss: 0.201170893276439
+Epoch 92
+
+ Epoch: 92, Loss: 0.2022639775977415
+Epoch 93
+
+ Epoch: 93, Loss: 0.20330943561652126
+Epoch 94
+
+ Epoch: 94, Loss: 0.20218611114165363
+Epoch 95
+
+ Epoch: 95, Loss: 0.20105905830860138
+Epoch 96
+
+ Epoch: 96, Loss: 0.2040103744058048
+Epoch 97
+
+ Epoch: 97, Loss: 0.2011203919263447
+Epoch 98
+
+ Epoch: 98, Loss: 0.200219522942515
+Epoch 99
+
+ Epoch: 99, Loss: 0.1977266805136905
+Epoch 100
+
+ Epoch: 100, Loss: 0.2038164848790449
+Epoch 101
+
+ Epoch: 101, Loss: 0.20201019855106578
+Epoch 102
+
+ Epoch: 102, Loss: 0.20313908510348377
+Epoch 103
+
+ Epoch: 103, Loss: 0.2017743385889951
+Epoch 104
+
+ Epoch: 104, Loss: 0.20111853848485386
+Epoch 105
+
+ Epoch: 105, Loss: 0.1987941589425592
+Epoch 106
+
+ Epoch: 106, Loss: 0.19800471032367034
+Epoch 107
+
+ Epoch: 107, Loss: 0.19979698035646887
+Epoch 108
+
+ Epoch: 108, Loss: 0.19943342708489475
+Epoch 109
+
+ Epoch: 109, Loss: 0.20140304504071965
+Epoch 110
+
+ Epoch: 110, Loss: 0.19796506709912243
+Epoch 111
+
+ Epoch: 111, Loss: 0.19938551941338709
+Epoch 112
+
+ Epoch: 112, Loss: 0.2032643990481601
+Epoch 113
+
+ Epoch: 113, Loss: 0.19884076802169576
+Epoch 114
+
+ Epoch: 114, Loss: 0.20166314305628047
+Epoch 115
+
+ Epoch: 115, Loss: 0.20125665866276798
+Epoch 116
+
+ Epoch: 116, Loss: 0.19738082982161465
+Epoch 117
+
+ Epoch: 117, Loss: 0.19862318389555988
+Epoch 118
+
+ Epoch: 118, Loss: 0.1979860444279278
+Epoch 119
+
+ Epoch: 119, Loss: 0.1960010993130067
+Epoch 120
+
+ Epoch: 120, Loss: 0.19870182258241317
+Epoch 121
+
+ Epoch: 121, Loss: 0.20273540651097016
+Epoch 122
+
+ Epoch: 122, Loss: 0.20070256687262478
+Epoch 123
+
+ Epoch: 123, Loss: 0.1971143554238712
+Epoch 124
+
+ Epoch: 124, Loss: 0.19533842758220785
+Epoch 125
+
+ Epoch: 125, Loss: 0.19906749313368516
+Epoch 126
+
+ Epoch: 126, Loss: 0.20161848822060754
+Epoch 127
+
+ Epoch: 127, Loss: 0.19779708367936752
+Epoch 128
+
+ Epoch: 128, Loss: 0.2029484313200502
+Epoch 129
+
+ Epoch: 129, Loss: 0.1951536189983873
+Epoch 130
+
+ Epoch: 130, Loss: 0.19859660153879838
+Epoch 131
+
+ Epoch: 131, Loss: 0.19162610874456518
+Epoch 132
+
+ Epoch: 132, Loss: 0.19650133962140365
+Epoch 133
+
+ Epoch: 133, Loss: 0.19685877947246327
+Epoch 134
+
+ Epoch: 134, Loss: 0.1992018271018477
+Epoch 135
+
+ Epoch: 135, Loss: 0.19851661254377925
+Epoch 136
+
+ Epoch: 136, Loss: 0.19876890191260507
+Epoch 137
+
+ Epoch: 137, Loss: 0.19650551238480737
+Epoch 138
+
+ Epoch: 138, Loss: 0.19451618063099244
+Epoch 139
+
+ Epoch: 139, Loss: 0.19735688014942057
+Epoch 140
+
+ Epoch: 140, Loss: 0.19266074545243206
+Epoch 141
+
+ Epoch: 141, Loss: 0.1951662499238463
+Epoch 142
+
+ Epoch: 142, Loss: 0.19415495106402567
+Epoch 143
+
+ Epoch: 143, Loss: 0.1889702616369023
+Epoch 144
+
+ Epoch: 144, Loss: 0.1939530315644601
+Epoch 145
+
+ Epoch: 145, Loss: 0.18838371248806224
+Epoch 146
+
+ Epoch: 146, Loss: 0.19069253784768722
+Epoch 147
+
+ Epoch: 147, Loss: 0.18837183319470463
+Epoch 148
+
+ Epoch: 148, Loss: 0.1853107485701056
+Epoch 149
+
+ Epoch: 149, Loss: 0.18822106587536194
+Epoch 150
+
+ Epoch: 150, Loss: 0.1865910041858168
+Epoch 151
+
+ Epoch: 151, Loss: 0.1906170384848819
+Epoch 152
+
+ Epoch: 152, Loss: 0.18870810726109674
+Epoch 153
+
+ Epoch: 153, Loss: 0.18500929325819016
+Epoch 154
+
+ Epoch: 154, Loss: 0.18406054202248068
+Epoch 155
+
+ Epoch: 155, Loss: 0.18528744534534566
+Epoch 156
+
+ Epoch: 156, Loss: 0.18673200510880528
+Epoch 157
+
+ Epoch: 157, Loss: 0.18465937586391673
+Epoch 158
+
+ Epoch: 158, Loss: 0.18510373506475897
+Epoch 159
+
+ Epoch: 159, Loss: 0.1869856430327191
+Epoch 160
+
+ Epoch: 160, Loss: 0.18300348301144206
+Epoch 161
+
+ Epoch: 161, Loss: 0.18387126265203252
+Epoch 162
+
+ Epoch: 162, Loss: 0.18548806362292347
+Epoch 163
+
+ Epoch: 163, Loss: 0.18104706397827933
+Epoch 164
+
+ Epoch: 164, Loss: 0.18515799019266577
+Epoch 165
+
+ Epoch: 165, Loss: 0.18221694406341105
+Epoch 166
+
+ Epoch: 166, Loss: 0.18362180362729466
+Epoch 167
+
+ Epoch: 167, Loss: 0.18253442162976546
+Epoch 168
+
+ Epoch: 168, Loss: 0.1836773858350866
+Epoch 169
+
+ Epoch: 169, Loss: 0.1799252449589617
+Epoch 170
+
+ Epoch: 170, Loss: 0.18361847803873174
+Epoch 171
+
+ Epoch: 171, Loss: 0.17713630287086263
+Epoch 172
+
+ Epoch: 172, Loss: 0.18072504024295247
+Epoch 173
+
+ Epoch: 173, Loss: 0.18017966913826325
+Epoch 174
+
+ Epoch: 174, Loss: 0.17932205208960703
+Epoch 175
+
+ Epoch: 175, Loss: 0.17850016583414638
+Epoch 176
+
+ Epoch: 176, Loss: 0.17848471332998836
+Epoch 177
+
+ Epoch: 177, Loss: 0.18046985522789113
+Epoch 178
+
+ Epoch: 178, Loss: 0.18118008226156235
+Epoch 179
+
+ Epoch: 179, Loss: 0.17960474377169328
+Epoch 180
+
+ Epoch: 180, Loss: 0.17907398150247686
+Epoch 181
+
+ Epoch: 181, Loss: 0.17835527483154745
+Epoch 182
+
+ Epoch: 182, Loss: 0.17729653900160508
+Epoch 183
+
+ Epoch: 183, Loss: 0.1773236946148031
+Epoch 184
+
+ Epoch: 184, Loss: 0.17677851021289825
+Epoch 185
+
+ Epoch: 185, Loss: 0.17830242260414012
+Epoch 186
+
+ Epoch: 186, Loss: 0.17357972045155132
+Epoch 187
+
+ Epoch: 187, Loss: 0.17527861717869253
+Epoch 188
+
+ Epoch: 188, Loss: 0.17136510987492168
+Epoch 189
+
+ Epoch: 189, Loss: 0.17734184116125107
+Epoch 190
+
+ Epoch: 190, Loss: 0.17258988233173594
+Epoch 191
+
+ Epoch: 191, Loss: 0.17220587809296214
+Epoch 192
+
+ Epoch: 192, Loss: 0.17713549514027202
+Epoch 193
+
+ Epoch: 193, Loss: 0.17348042130470276
+Epoch 194
+
+ Epoch: 194, Loss: 0.1755040393156164
+Epoch 195
+
+ Epoch: 195, Loss: 0.16862581538803437
+Epoch 196
+
+ Epoch: 196, Loss: 0.171250878888018
+Epoch 197
+
+ Epoch: 197, Loss: 0.172189725234228
+Epoch 198
+
+ Epoch: 198, Loss: 0.1669364952865769
+Epoch 199
+
+ Epoch: 199, Loss: 0.16730006521239
+Epoch 200
+
+ Epoch: 200, Loss: 0.17153194371391745
+Epoch 201
+
+ Epoch: 201, Loss: 0.16634746903882308
+Epoch 202
+
+ Epoch: 202, Loss: 0.1652317638782894
+Epoch 203
+
+ Epoch: 203, Loss: 0.16966847067370133
+Epoch 204
+
+ Epoch: 204, Loss: 0.1661326065659523
+Epoch 205
+
+ Epoch: 205, Loss: 0.1720593150924234
+Epoch 206
+
+ Epoch: 206, Loss: 0.16318746086429148
+Epoch 207
+
+ Epoch: 207, Loss: 0.1672038694514948
+Epoch 208
+
+ Epoch: 208, Loss: 0.1662920595091932
+Epoch 209
+
+ Epoch: 209, Loss: 0.16483128114658244
+Epoch 210
+
+ Epoch: 210, Loss: 0.16442763432860374
+Epoch 211
+
+ Epoch: 211, Loss: 0.16515163945801117
+Epoch 212
+
+ Epoch: 212, Loss: 0.16638506642159293
+Epoch 213
+
+ Epoch: 213, Loss: 0.16836202977334752
+Epoch 214
+
+ Epoch: 214, Loss: 0.16496646491920247
+Epoch 215
+
+ Epoch: 215, Loss: 0.16408271342515945
+Epoch 216
+
+ Epoch: 216, Loss: 0.16522058187162175
+Epoch 217
+
+ Epoch: 217, Loss: 0.15983344570678823
+Epoch 218
+
+ Epoch: 218, Loss: 0.1636868388775517
+Epoch 219
+
+ Epoch: 219, Loss: 0.16324658165959752
+Epoch 220
+
+ Epoch: 220, Loss: 0.16605734868961222
+Epoch 221
+
+ Epoch: 221, Loss: 0.1612542900530731
+Epoch 222
+
+ Epoch: 222, Loss: 0.166217951432747
+Epoch 223
+
+ Epoch: 223, Loss: 0.15957874563686988
+Epoch 224
+
+ Epoch: 224, Loss: 0.1673813394325621
+Epoch 225
+
+ Epoch: 225, Loss: 0.1624007468276164
+Epoch 226
+
+ Epoch: 226, Loss: 0.1646823297966929
+Epoch 227
+
+ Epoch: 227, Loss: 0.1593114220920731
+Epoch 228
+
+ Epoch: 228, Loss: 0.16258309233714552
+Epoch 229
+
+ Epoch: 229, Loss: 0.16409568357117035
+Epoch 230
+
+ Epoch: 230, Loss: 0.159680595731034
+Epoch 231
+
+ Epoch: 231, Loss: 0.16305817378794446
+Epoch 232
+
+ Epoch: 232, Loss: 0.15953977844294379
+Epoch 233
+
+ Epoch: 233, Loss: 0.16075675189495087
+Epoch 234
+
+ Epoch: 234, Loss: 0.155832662301905
+Epoch 235
+
+ Epoch: 235, Loss: 0.16018699503996792
+Epoch 236
+
+ Epoch: 236, Loss: 0.1577549059601391
+Epoch 237
+
+ Epoch: 237, Loss: 0.15702705129104502
+Epoch 238
+
+ Epoch: 238, Loss: 0.15629546059405103
+Epoch 239
+
+ Epoch: 239, Loss: 0.1562273692997063
+Epoch 240
+
+ Epoch: 240, Loss: 0.15567899780238376
+Epoch 241
+
+ Epoch: 241, Loss: 0.15411516191328273
+Epoch 242
+
+ Epoch: 242, Loss: 0.15535329369937673
+Epoch 243
+
+ Epoch: 243, Loss: 0.15478148070328376
+Epoch 244
+
+ Epoch: 244, Loss: 0.150669668088941
+Epoch 245
+
+ Epoch: 245, Loss: 0.15407335451420615
+Epoch 246
+
+ Epoch: 246, Loss: 0.1525822045171962
+Epoch 247
+
+ Epoch: 247, Loss: 0.15257742957157247
+Epoch 248
+
+ Epoch: 248, Loss: 0.1545305920436102
+Epoch 249
+
+ Epoch: 249, Loss: 0.15072805850821383
+Epoch 250
+
+ Epoch: 250, Loss: 0.14969338630052173
+Finished training.
+Saving state dict.
