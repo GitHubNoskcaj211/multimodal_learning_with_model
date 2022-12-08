@@ -11,7 +11,7 @@ from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-import umap
+import umap.umap_ as umap
 import seaborn as sns
 import matplotlib.pyplot as plt
 from multipledispatch import dispatch
@@ -21,6 +21,10 @@ from barbar import Bar
 from joblib import dump, load
 import re
 import json
+import numpy as np
+import torch
+from typing import Tuple
+import torch.nn as nn
 import random
 
 def store_embeddings_in_dict(blobs_folder_path: str, model: encoderDecoder2) -> dict:
@@ -464,7 +468,8 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder2, use
     metrics = {'accuracy': [], 'precision': [], 'recall': [], 'f1-score': [], 'support': []}
     metrics_train = {'accuracy': [], 'precision': [], 'recall': [], 'f1-score': [], 'support': []}
     model.eval()
-    for trial in range(1):
+    print("Real blobs folder path: ",blobs_folder_path)
+    for trial in range(20):
         print('trial'+str(trial))
         blobs_folder = os.listdir(blobs_folder_path)
         train_embeddings_list = []
@@ -539,21 +544,21 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder2, use
                         kinematics_in[ii-start_frame][46] = float(line_nums[10+57])
                         kinematics_in[ii-start_frame][47] = float(line_nums[11+57])
                         gesture_id_num = int(gesture_to_index[line_nums[-1]])
-                        out = np.zeros(shape=[13])
-                        out[gesture_id_num] = 1
                         if test_user in file:
-                            test_out.append(out)
+                            test_out.append(gesture_id_num)
                         else:
-                            train_out.append(out)
+                            train_out.append(gesture_id_num)
             try:
                 kinematics_in = kinematics_in.unsqueeze(0)
                 out = model.encoder(kinematics_in)
                 out, h = model.LSTM(out)
                 out = out.cpu().detach().data.numpy()
                 if test_user in file:
-                    test_embeddings_list.append(out.reshape(512*1350))
+                    for i in range(out.shape[1]):
+                        test_embeddings_list.append(out[0][i].reshape(512))
                 else:
-                    train_embeddings_list.append(out.reshape(512*1350))
+                    for i in range(out.shape[1]):
+                        train_embeddings_list.append(out[0][i].reshape(512))
             except:
                 print("PROBLEM")
                 pass
@@ -561,7 +566,7 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder2, use
         test_embeddings_list = np.array(test_embeddings_list)
         train_out = np.array(train_out)
         test_out = np.array(test_out)
-        classifier = XGBClassifier(n_estimators = 1000)
+        classifier = XGBClassifier(n_estimators = 10)
         print('fitting')
         classifier.fit(train_embeddings_list, train_out)
 
@@ -600,6 +605,123 @@ def evaluate_model_superuser(blobs_folder_path: str, model: encoderDecoder2, use
             f.write('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
             print('Mean {} : {} \t \t Std {} : {}'.format(key, np.mean(val), key, np.std(val)))
         f.close()
+
+def evaluate_model_umaps(blobs_folder_path: str, model: encoderDecoder2) -> None:
+    user_letter_to_index = {'B': 0, 'C': 1, 'D': 2, 'E': 3, 'F': 4, 'G': 5, 'H': 6, 'I': 7}
+    gesture_to_index = {'UNKNOWN': 0, 'G1': 1, 'G2': 2, 'G3': 3, 'G4': 4, 'G5': 5, 'G6': 6, 'G7': 7, 'G8': 8, 'G8': 8, 'G9': 9, 'G10': 10, 'G11': 11, 'G12': 12}
+    user_to_skill = {'B': 0, 'C': 1, 'D': 2, 'E': 2, 'F': 1, 'G': 0, 'H': 0, 'I': 0}
+    model.eval()
+    blobs_folder = os.listdir(blobs_folder_path)
+    embeddings_list = []
+    user_list = []
+    skill_list = []
+    gesture_list = []
+    print('loading')
+    for file in blobs_folder:
+        user_letter = file[9]
+        user_index = user_letter_to_index[user_letter]
+        user_skill = user_to_skill[user_letter]
+        curr_kinematics_path = os.path.join(blobs_folder_path, file)
+        count = 0
+        with open(curr_kinematics_path, "r") as f:
+            for count, line in enumerate(f):
+                pass
+        count = count + 1
+        kinematics_in = torch.empty(size = [count, 12*4])
+        with open(curr_kinematics_path, "r") as f:
+            for ii, line in enumerate(f):
+                line_nums = line.strip().split(' ')
+                if len(line_nums) < 77:
+                    raise Exception("Not enough kinematic numbers")
+                kinematics_in[ii][0] = float(line_nums[0])
+                kinematics_in[ii][1] = float(line_nums[1])
+                kinematics_in[ii][2] = float(line_nums[2])
+                kinematics_in[ii][3] = float(line_nums[3])
+                kinematics_in[ii][4] = float(line_nums[4])
+                kinematics_in[ii][5] = float(line_nums[5])
+                kinematics_in[ii][6] = float(line_nums[6])
+                kinematics_in[ii][7] = float(line_nums[7])
+                kinematics_in[ii][8] = float(line_nums[8])
+                kinematics_in[ii][9] = float(line_nums[9])
+                kinematics_in[ii][10] = float(line_nums[10])
+                kinematics_in[ii][11] = float(line_nums[11])
+                kinematics_in[ii][12] = float(line_nums[0+19])
+                kinematics_in[ii][13] = float(line_nums[1+19])
+                kinematics_in[ii][14] = float(line_nums[2+19])
+                kinematics_in[ii][15] = float(line_nums[3+19])
+                kinematics_in[ii][16] = float(line_nums[4+19])
+                kinematics_in[ii][17] = float(line_nums[5+19])
+                kinematics_in[ii][18] = float(line_nums[6+19])
+                kinematics_in[ii][19] = float(line_nums[7+19])
+                kinematics_in[ii][20] = float(line_nums[8+19])
+                kinematics_in[ii][21] = float(line_nums[9+19])
+                kinematics_in[ii][22] = float(line_nums[10+19])
+                kinematics_in[ii][23] = float(line_nums[11+19])
+                kinematics_in[ii][24] = float(line_nums[0+38])
+                kinematics_in[ii][25] = float(line_nums[1+38])
+                kinematics_in[ii][26] = float(line_nums[2+38])
+                kinematics_in[ii][27] = float(line_nums[3+38])
+                kinematics_in[ii][28] = float(line_nums[4+38])
+                kinematics_in[ii][29] = float(line_nums[5+38])
+                kinematics_in[ii][30] = float(line_nums[6+38])
+                kinematics_in[ii][31] = float(line_nums[7+38])
+                kinematics_in[ii][32] = float(line_nums[8+38])
+                kinematics_in[ii][33] = float(line_nums[9+38])
+                kinematics_in[ii][34] = float(line_nums[10+38])
+                kinematics_in[ii][35] = float(line_nums[11+38])
+                kinematics_in[ii][36] = float(line_nums[0+57])
+                kinematics_in[ii][37] = float(line_nums[1+57])
+                kinematics_in[ii][38] = float(line_nums[2+57])
+                kinematics_in[ii][39] = float(line_nums[3+57])
+                kinematics_in[ii][40] = float(line_nums[4+57])
+                kinematics_in[ii][41] = float(line_nums[5+57])
+                kinematics_in[ii][42] = float(line_nums[6+57])
+                kinematics_in[ii][43] = float(line_nums[7+57])
+                kinematics_in[ii][44] = float(line_nums[8+57])
+                kinematics_in[ii][45] = float(line_nums[9+57])
+                kinematics_in[ii][46] = float(line_nums[10+57])
+                kinematics_in[ii][47] = float(line_nums[11+57])
+                gesture_id_num = int(gesture_to_index[line_nums[-1]])
+                gesture_list.append(gesture_id_num)
+                user_list.append(user_index)
+                skill_list.append(user_skill)
+        try:
+            kinematics_in = kinematics_in.unsqueeze(0)
+            out = model.encoder(kinematics_in)
+            out, h = model.LSTM(out)
+            out = out.cpu().detach().data.numpy()
+            for i in range(out.shape[1]):
+                embeddings_list.append(out[0][i].reshape(512))
+        except:
+            print("PROBLEM")
+            pass
+    embeddings = np.array(embeddings_list)
+    print("Embeddings size: ",embeddings.shape)
+    print('Training umap reducer.')    
+    umap_reducer = umap.UMAP()
+    reduced_embeddings = umap_reducer.fit_transform(embeddings)
+    
+    print('Generating skill plots.')
+    plt.scatter(reduced_embeddings[:, 0], reduced_embeddings[:, 1], c=[sns.color_palette()[x] for x in skill_list])
+    plt.gca().set_aspect('equal', 'datalim')
+    plt.title('UMAP projection of the Skill clusters', fontsize=24)
+    plt.savefig('umap_skill.png')
+    plt.clf()
+
+    print('Generating gesture plots.')
+    plt.scatter(reduced_embeddings[:, 0], reduced_embeddings[:, 1], c=[sns.color_palette()[x] for x in gesture_list])
+    plt.gca().set_aspect('equal', 'datalim')
+    plt.title('UMAP projection of the Gesture clusters', fontsize=24)
+    plt.savefig('umap_gesture.png')
+    plt.clf()
+
+    print('Generating user plots.')
+    plt.scatter(reduced_embeddings[:, 0], reduced_embeddings[:, 1], c=[sns.color_palette()[x] for x in user_list])
+    plt.gca().set_aspect('equal', 'datalim')
+    plt.title('UMAP projection of the User clusters', fontsize=24)
+    plt.savefig('umap_user.png')
+    plt.clf()
+    
 
 def main():
     blobs_folder_path = '../jigsaw_dataset/Suturing/blobs'
